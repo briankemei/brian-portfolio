@@ -129,8 +129,9 @@ h3{font-size: var(--fs-h3);}
     left: 0;
     right: 0;
     z-index: 0;
-    transform: translate(100%);
-    transition: transfrom 250ms cubic-bezier(.5, 0, .5, 1);
+
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
 .nav__list{
     list-style: none;
@@ -153,9 +154,13 @@ h3{font-size: var(--fs-h3);}
     color: var(--clr-accent);
 }
 .nav-toggle{
-    padding: .25em;
+    padding: .5em;
     background: transparent;
+    cursor: pointer;
     border: 0;
+    position: absolute;
+    top: 1em;
+    right: 1em;
 }
 /*Hamburger*/
 
@@ -181,12 +186,11 @@ h3{font-size: var(--fs-h3);}
     left: 0;
     right: 0;
 }
-.hamburger::before{
-    top:6px;
-}
-.hamburger::after{
-    bottom: 6px;
-}
+
+.hamburger::before{ top:6px; }
+.hamburger::after{ bottom: 6px;}
+
+
 /*intro section*/
 .intro{
     position: relative;
