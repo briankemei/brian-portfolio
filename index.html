@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brian Kemei — Software Engineering student at Morehouse College. Full-stack, data, and cloud projects.">
+    <meta name="author" content="Brian Kemei">
+    <title>Brian Kemei | Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a href="#home" class="logo">Brian<span>.</span></a>
+
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+            <span class="hamburger"></span>
+        </button>
+
+        <nav class="nav" id="primary-nav" aria-label="Primary">
+            <ul class="nav__list">
+                <li><a href="#home" class="nav__link">Home</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#projects" class="nav__link">Projects</a></li>
+                <li><a href="#experience" class="nav__link">Experience</a></li>
+                <li><a href="#skills" class="nav__link">Skills</a></li>
+                <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home -->
+        <section class="hero" id="home">
+            <div class="hero__inner">
+                <div class="hero__content">
+                    <div class="hero__pills" aria-hidden="true">
+                        <span class="pill pill--live"><span class="pill__dot"></span> Open to internships</span>
+                        <span class="pill">Atlanta, GA</span>
+                        <span class="pill">Class of 2026</span>
+                    </div>
+
+                    <p class="hero__hello">Hello — welcome to my portfolio</p>
+                    <h1 class="hero__name">Brian Kemei</h1>
+                    <p class="hero__role">Software Engineering Student · Full-Stack &amp; Data</p>
+                    <p class="hero__blurb">
+                        I build clean, useful software — web apps, data projects, and cloud-backed tools —
+                        while competing as a student-athlete at Morehouse College.
+                    </p>
+
+                    <div class="hero__actions">
+                        <a href="Resources/Resume.pdf" class="btn btn--primary" target="_blank" rel="noopener">
+                            <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> View Resume
+                        </a>
+                        <a href="#projects" class="btn btn--ghost">
+                            Projects <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <div class="hero__social">
+                        <a href="https://github.com/briankemei" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/briankemei" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="mailto:briankemei01@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div class="hero__photo">
+                    <div class="hero__photo-ring">
+                        <img
+                            src="Resources/Briank.jpg"
+                            alt="Portrait of Brian Kemei"
+                            width="420"
+                            height="420"
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="hero__glow" aria-hidden="true"></div>
+        </section>
+
+        <!-- About -->
+        <section class="section" id="about">
+            <div class="section__head">
+                <p class="section__eyebrow">About</p>
+                <h2 class="section__title">Who I am</h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-copy">
+                    <p>
+                        Hi — I’m <strong>Brian Kemei</strong>. Welcome to my site, where I share projects I’m building,
+                        skills I’m sharpening, and the path I’m on as an engineer.
+                    </p>
+                    <p>
+                        I’m a Software Engineering major at <strong>Morehouse College</strong> with a focus on full-stack
+                        development, data analysis, and cloud. I’m eager for internships where I can ship real features,
+                        learn from strong teams, and create software people actually use.
+                    </p>
+                    <p>
+                        Outside class, I’m co-captain of the Morehouse Cross Country team. Balancing training and coursework
+                        taught me discipline, teamwork, and how to finish strong — the same mindset I bring to code.
+                    </p>
+                </div>
+
+                <aside class="about-cards">
+                    <article class="info-card">
+                        <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                        <h3>Education</h3>
+                        <p>B.Sc. Software Engineering<br>Morehouse College · 2026</p>
+                    </article>
+                    <article class="info-card">
+                        <i class="fa-solid fa-code" aria-hidden="true"></i>
+                        <h3>Focus</h3>
+                        <p>Full-stack web, data &amp; cloud tooling</p>
+                    </article>
+                    <article class="info-card">
+                        <i class="fa-solid fa-medal" aria-hidden="true"></i>
+                        <h3>Athletics</h3>
+                        <p>XC &amp; Track co-captain · 5× MVP</p>
+                    </article>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section section--alt" id="projects">
+            <div class="section__head">
+                <p class="section__eyebrow">Projects</p>
+                <h2 class="section__title">Featured work</h2>
+                <p class="section__lead">Selected builds from class, personal work, and data science practice.</p>
+            </div>
+
+            <div class="project-list">
+                <article class="project">
+                    <div class="project__index">01</div>
+                    <div class="project__body">
+                        <h3>StockScope</h3>
+                        <p>
+                            Full-stack stock analysis app with auth, favorites, industry filters, and growth-focused
+                            metrics (P/E, income growth) using Finnhub and yFinance.
+                        </p>
+                        <ul class="tags">
+                            <li>Flask</li>
+                            <li>DynamoDB</li>
+                            <li>Docker</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                    <a class="btn btn--outline" href="https://github.com/briankemei" target="_blank" rel="noopener">
+                        View Project <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                    </a>
+                </article>
+
+                <article class="project">
+                    <div class="project__index">02</div>
+                    <div class="project__body">
+                        <h3>Hangman</h3>
+                        <p>
+                            Browser Hangman game with React and Vite — component UI, game state, and a responsive layout.
+                        </p>
+                        <ul class="tags">
+                            <li>React</li>
+                            <li>Vite</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <a class="btn btn--outline" href="https://github.com/briankemei" target="_blank" rel="noopener">
+                        View Project <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                    </a>
+                </article>
+
+                <article class="project">
+                    <div class="project__index">03</div>
+                    <div class="project__body">
+                        <h3>WNBA &amp; Sports Analytics</h3>
+                        <p>
+                            Exploratory analysis on team box scores with Python and Jupyter to surface performance trends.
+                        </p>
+                        <ul class="tags">
+                            <li>Python</li>
+                            <li>Pandas</li>
+                            <li>Jupyter</li>
+                        </ul>
+                    </div>
+                    <a class="btn btn--outline" href="https://github.com/briankemei" target="_blank" rel="noopener">
+                        View Project <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                    </a>
+                </article>
+
+                <article class="project">
+                    <div class="project__index">04</div>
+                    <div class="project__body">
+                        <h3>Rock Paper Scissors</h3>
+                        <p>
+                            Interactive browser game with score tracking — early project that sharpened DOM and game-loop logic.
+                        </p>
+                        <ul class="tags">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <a class="btn btn--outline" href="https://github.com/briankemei/RockScissorsPaper" target="_blank" rel="noopener">
+                        View Project <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                    </a>
+                </article>
+
+                <article class="project">
+                    <div class="project__index">05</div>
+                    <div class="project__body">
+                        <h3>ML &amp; Data Science Practice</h3>
+                        <p>
+                            Housing price modeling and competition-style prediction pipelines — feature prep, training, evaluation.
+                        </p>
+                        <ul class="tags">
+                            <li>Python</li>
+                            <li>scikit-learn</li>
+                            <li>Jupyter</li>
+                        </ul>
+                    </div>
+                    <a class="btn btn--outline" href="https://github.com/briankemei" target="_blank" rel="noopener">
+                        View Project <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="section" id="experience">
+            <div class="section__head">
+                <p class="section__eyebrow">Experience</p>
+                <h2 class="section__title">Journey so far</h2>
+            </div>
+
+            <div class="timeline">
+                <article class="timeline__item">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__card">
+                        <div class="timeline__meta">
+                            <span class="timeline__role">B.Sc. Software Engineering</span>
+                            <span class="timeline__date">2022 — 2026</span>
+                        </div>
+                        <h3>Morehouse College</h3>
+                        <p>
+                            Coursework in programming, databases, web development, and software design.
+                            Building full-stack and data projects alongside academics.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="timeline__item">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__card">
+                        <div class="timeline__meta">
+                            <span class="timeline__role">Co-Captain · Cross Country &amp; Track</span>
+                            <span class="timeline__date">Ongoing</span>
+                        </div>
+                        <h3>Morehouse Athletics</h3>
+                        <p>
+                            5× Morehouse MVP; school records in 10,000m and XC; SIAC Championship MVP honors.
+                            Leadership, time management, and high-pressure performance.
+                        </p>
+                        <ul class="pr-inline">
+                            <li>1500m · 4:03</li>
+                            <li>5k · 14:53</li>
+                            <li>10k · 31:01</li>
+                            <li>XC 8k · 24:31</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="timeline__item">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__card">
+                        <div class="timeline__meta">
+                            <span class="timeline__role">Personal &amp; Course Projects</span>
+                            <span class="timeline__date">Ongoing</span>
+                        </div>
+                        <h3>Full-Stack &amp; Data Builds</h3>
+                        <p>
+                            StockScope, React games, sports analytics notebooks, and ML practice — shipping end-to-end
+                            features with Python, JavaScript, SQL, Docker, and AWS.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="section section--alt" id="skills">
+            <div class="section__head">
+                <p class="section__eyebrow">Skills</p>
+                <h2 class="section__title">Tools I work with</h2>
+            </div>
+
+            <div class="skills-board">
+                <div class="skills-group">
+                    <h3>Languages</h3>
+                    <ul class="tags tags--lg">
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>HTML &amp; CSS</li>
+                        <li>SQL</li>
+                        <li>C++</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+                <div class="skills-group">
+                    <h3>Frameworks &amp; libraries</h3>
+                    <ul class="tags tags--lg">
+                        <li>React</li>
+                        <li>Flask</li>
+                        <li>Vite</li>
+                        <li>Pandas</li>
+                        <li>Jupyter</li>
+                        <li>pytest</li>
+                    </ul>
+                </div>
+                <div class="skills-group">
+                    <h3>Tools &amp; platforms</h3>
+                    <ul class="tags tags--lg">
+                        <li>Git &amp; GitHub</li>
+                        <li>AWS</li>
+                        <li>Docker</li>
+                        <li>DynamoDB</li>
+                        <li>VS Code</li>
+                    </ul>
+                </div>
+                <div class="skills-group">
+                    <h3>Spoken languages</h3>
+                    <ul class="tags tags--lg">
+                        <li>English</li>
+                        <li>Kiswahili</li>
+                        <li>Spanish</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section" id="contact">
+            <div class="section__head">
+                <p class="section__eyebrow">Contact</p>
+                <h2 class="section__title">Let’s talk</h2>
+                <p class="section__lead">Got an idea, internship lead, or question? Reach out — I’d love to connect.</p>
+            </div>
+
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <a class="contact-row" href="mailto:briankemei01@gmail.com">
+                        <span class="contact-row__icon"><i class="fa-solid fa-envelope"></i></span>
+                        <span>
+                            <strong>Email</strong>
+                            <span class="contact-row__detail">briankemei01@gmail.com</span>
+                        </span>
+                    </a>
+                    <a class="contact-row" href="https://www.linkedin.com/in/briankemei" target="_blank" rel="noopener">
+                        <span class="contact-row__icon"><i class="fa-brands fa-linkedin-in"></i></span>
+                        <span>
+                            <strong>LinkedIn</strong>
+                            <span class="contact-row__detail">/in/briankemei</span>
+                        </span>
+                    </a>
+                    <a class="contact-row" href="https://github.com/briankemei" target="_blank" rel="noopener">
+                        <span class="contact-row__icon"><i class="fa-brands fa-github"></i></span>
+                        <span>
+                            <strong>GitHub</strong>
+                            <span class="contact-row__detail">@briankemei</span>
+                        </span>
+                    </a>
+                    <a class="contact-row" href="Resources/Resume.pdf" target="_blank" rel="noopener">
+                        <span class="contact-row__icon"><i class="fa-solid fa-file-lines"></i></span>
+                        <span>
+                            <strong>Resume</strong>
+                            <span class="contact-row__detail">Download PDF</span>
+                        </span>
+                    </a>
+                </div>
+
+                <form class="contact-form" id="contact-form" action="mailto:briankemei01@gmail.com" method="get" enctype="text/plain">
+                    <h3>Get in touch</h3>
+                    <label class="field">
+                        <span>Name</span>
+                        <input type="text" name="name" placeholder="Your name" required autocomplete="name">
+                    </label>
+                    <label class="field">
+                        <span>Email</span>
+                        <input type="email" name="email" placeholder="you@example.com" required autocomplete="email">
+                    </label>
+                    <label class="field">
+                        <span>Message</span>
+                        <textarea name="body" rows="5" placeholder="What would you like to talk about?" required></textarea>
+                    </label>
+                    <button type="submit" class="btn btn--primary btn--block">
+                        Send Message <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                    </button>
+                    <p class="form-note">Opens your email client with the message ready to send.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__brand">Brian Kemei</p>
+        <div class="footer__links">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <p class="footer__copy">&copy; <span id="year"></span> Brian Kemei. All rights reserved.</p>
+    </footer>
+
+    <script src="Brian.js"></script>
+</body>
+</html>
